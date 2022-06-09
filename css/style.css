@@ -2,11 +2,25 @@
 
 :root{
     --yellow: #f9ca24;
+
+    --dblue: #005acd;
+    --blue1: #0093cb;
+    --blue2: #bef0ff;
+    --blue3:#bef0ff;
+    --white: #f5ffff;
+    --gray: #AAAAAA;
+    --bgrey: #D3E0EA;
+    --black: #1D242B;
+    --sblue: #06283D;
+    --white2: #E8F9FD;
+    --swhite: #fff;
+    --dgray:#323643;
+    --bluee: #93DEFF;
+    
 }
 
 
 *{
-    
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
@@ -19,8 +33,8 @@
 }
 
 *::selection{
-    background:var(--yellow);
-    color: #333;
+    background:var(--dblue);
+    color: var(--white);
 }
 
 html{
@@ -33,16 +47,16 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: #222;
+    background: var(--bgrey);
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--yellow);
+    background:var(--blue1);
 }
 
 body {
 
-    background: #111; 
+    background: var(--white2); 
     overflow-x: hidden;
     padding-left: 35rem;
 
@@ -55,8 +69,8 @@ section{
 
 .btn{
     padding: .7rem 3rem;
-    background: #333;
-    color: #fff;
+    background: var(--blue1);
+    color: var(--white);
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -70,7 +84,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--yellow)
+    background: var(--dblue);
 }
 
 
@@ -79,13 +93,12 @@ section{
     margin: 0 6rem;
     font-size: 4rem;
     padding: 1rem;
-    border-bottom: .1rem solid #fff4;
-    color: #fff;
-
+    border-bottom: .1rem solid var(--black);
+    color: var(--black);
 }
 
 .heading span{
-    color: var(--yellow);
+    color: var(--blue1);
 }
 
 header {
@@ -95,7 +108,7 @@ header {
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: #1a1a1a;
+    background: var(--blue1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -105,25 +118,25 @@ header {
 }
 
 header .user img{
-    height: 17rem;
-    width: 17rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: .3rem solid var(--yellow);
+    border: .3rem solid var(--white);
 }
 
 header .user .name{
     font-size: 3.5rem;
-    color: whitesmoke;
-
+    color: var(--white);
+  
 }
 
 
 header .user .post{
     font-size: 2rem;
-    color:  #696969;
-
+    color:  var(--bgrey);
+    margin-bottom: 5rem;
 }
 
 header .navbar{
@@ -139,14 +152,14 @@ header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 1rem;
-    background: #333;
-    color: whitesmoke;
+    background: var(--swhite);
+    color: var(--sblue);
     font-size: 2rem;
     border-radius: 5rem;
 }
 
 header .navbar ul li a:hover{
-    background: var(--yellow);
+    background: var(--bluee);
 }
 
 
@@ -154,8 +167,8 @@ header .navbar ul li a:hover{
     position: fixed;
     top: 2rem; 
     right: 2rem;
-    background: #333;
-    color: whitesmoke;
+    background: var(--blue1);
+    color: var(--white);
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
@@ -172,21 +185,22 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size:  2.5rem;
-    color: whitesmoke;
+    color: var(--black);
+}
+
+.home h1 span{
+    font-size:  5rem;
+    color: var(--blue1);
 }
 
 .home h1{
     font-size:  5rem;
-    color: whitesmoke;
-}
-
-.home h1{
-    color: var(--yellow);
+    color: var(--black);
 }
 
 .home p{
     font-size: 2rem;
-    color: #eee;
+    color: var(--black);
     padding: 1rem 0;
 }
 
@@ -208,14 +222,14 @@ header .navbar ul li a:hover{
 
 .about .row .info h3{
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--blue1);
     padding: 1rem 0;
     font-weight: normal;
 
 }
 
 .about .row .info h3 span{
-    color: #eee;
+    color: var(--black);
     padding: 0 0.5rem;
 }
 
@@ -229,8 +243,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box{
     width: 25rem;
-    
-    background: #222;
+    background: var(--blue1);
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -243,10 +256,10 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color: #fff;
+    color: var(--swhite);
 }
 
-.about .skills *{
+.about t .skills *{
     font-family: 'Gill Sans', sans-serif;
     list-style: none;
     padding: 0;
@@ -262,11 +275,12 @@ header .navbar ul li a:hover{
 
 
 .about .skills{
+    
     width: 50rem;
     margin: 10px auto;
-    color: #fff;
-    padding: 20px;
-    box-shadow: 0 14px 28 px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); 
+    color: var(--black);
+    padding: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); 
 }
 
 .about .skills li{
@@ -274,8 +288,12 @@ header .navbar ul li a:hover{
     padding: 10px;
 }
 
+.about .skills li::marker{
+    color: var(--white);
+}
+
 .about .skills .bar {
-    background: #343b48;
+    background: var(--blue2);
     display: block;
     height: 20px;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -283,18 +301,18 @@ header .navbar ul li a:hover{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
-.about .skills .bar:hover{
+.about  .skills .bar:hover{
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.about .skills .bar span {
+.about  .skills .bar span {
     border-radius: 10px;
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(236, 0, 140,1)0%, rgba(252, 103, 103, 1)100%);
+    background: linear-gradient(135deg, #005acd 0%, #0093cb 100%);
 }
 
-.about .skills .java{
+.about  .skills .java{
     width: 90%;
     animation: html 3s;
 }
@@ -306,23 +324,36 @@ header .navbar ul li a:hover{
 
 
 .about .skills .python{
-    width: 75%;
-    animation: html 3s;
-}
-
-.about .skills .js{
     width: 70%;
     animation: html 3s;
 }
 
-.about .skills .html{
+.about  .skills .js{
+    width: 70%;
+    animation: html 3s;
+}
+
+.about  .skills .html{
     width: 90%;
     animation: html 3s;
 }
 
-.about .skills .css{
+.about  .skills .css{
     width: 80%;
     animation: html 3s;
+}
+
+.skillheading {
+    text-align: center;
+    margin: 0;
+    border-bottom: .1rem;
+    font-size: 4rem;
+    padding: 1rem;
+    /*border-bottom: .1rem solid #fff4;*/
+}
+
+.skillheading span{
+    color: var(--blue1);
 }
 
 
@@ -340,13 +371,13 @@ header .navbar ul li a:hover{
     width: 27rem;
     margin: 4rem 1rem;
     padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    border-left: .2rem solid var(--blue1);
     position: relative;
 }
 .education .box-container .box span{
     font-size:  1.3rem;
-    background: #222;
-    color: #fff;
+    background: var(--blue1);
+    color: var(--white);
     border-radius:  5rem;
     padding: .5rem 2.5rem;
 
@@ -355,14 +386,14 @@ header .navbar ul li a:hover{
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color: #fff;
+    color: var(--blue1);
     padding-top: 1.5rem;
 }
 
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color: #eee;
+    color: var(--black);
     padding-top: 1rem;
 }
 .education .box-container .box img{
@@ -376,7 +407,7 @@ header .navbar ul li a:hover{
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: var(--yellow);
+    background: var(--blue3);
 }
 
 
@@ -389,8 +420,7 @@ header .navbar ul li a:hover{
 
 .education .tables .counter .box{
     width: 25rem;
-    
-    background: #222;
+    background: var(--blue1);
     text-align: center;
     padding: 2rem;
     margin: 2rem;
@@ -403,22 +433,23 @@ header .navbar ul li a:hover{
 
 .education .tables .counter .box h3{
     font-size: 2rem;
-    color: #fff;
+    color: var(--swhite);
 }
 
 .education .tables .counter .box h4{
     font-size: 1rem;
     font-style: italic;
-    color: #fff;
+    color: var(--swhite);
 }
 
 .education .tables .counter .box img{
     position: relative;
+    top: 1rem;
     width: 5rem;
     border-radius: 50%;
     text-align: center;
-    color: #fff;
-    background: var(--yellow);
+    color: var(--swhite);
+    background: var(--bluee);
 }
 
 
@@ -455,6 +486,13 @@ header .navbar ul li a:hover{
     margin: 2rem;
     overflow: hidden;
     cursor: pointer;
+    
+}
+
+.portfolio p{
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem 0;
 }
 
 .portfolio .box-container .box h3{
@@ -491,7 +529,7 @@ header .navbar ul li a:hover{
     right: 5rem;
     font-size: 5rem;
     font-weight: bolder;
-    color: #fff;
+    color: var(--swhite);
     cursor: pointer;
     z-index: 1000;
 }
@@ -504,20 +542,35 @@ header .navbar ul li a:hover{
     object-fit: cover;
 }
 
+
+
 .portheading {
     text-align: left;
     margin: 0 6rem;
     font-size: 4rem;
     padding: 1rem;
     /*border-bottom: .1rem solid #fff4;*/
-    color: #fff;
-
+    color: var(--black);
+    text-transform: none;
 }
 
 .portheading span{
-    color: var(--yellow);
+    color: var(--blue1);
 }
 
+.portfolio p{
+    text-align: center;
+    margin: 0 6rem;
+    font-size: 2rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.portfolio p span{
+
+    color: var(--blue1);
+}
 
 
 .contact .row {
@@ -532,6 +585,8 @@ header .navbar ul li a:hover{
     padding: 4rem;
     padding-bottom: 0;
 }
+
+/*
 
 .contact .row form{
     flex: 1 1 45rem;
@@ -559,9 +614,11 @@ header .navbar ul li a:hover{
     resize: none;
 }
 
+*/
+
 .contact .row .content .title{
     text-transform: uppercase;
-    color: #fff;
+    color: var(--blue1);
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -570,14 +627,15 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: #fff;
+    color: var(--black);
     padding: 1rem 0;
     font-weight: normal;
+    text-transform: none;
 }
 
 .contact .row .content .info h3 i{
     padding-right: 1rem;
-    color: var(--yellow);
+    color: var(--blue1);
 }
 
 .contact .counter{
@@ -589,7 +647,7 @@ header .navbar ul li a:hover{
 
 .contact .counter .box{
     width: 25rem;
-    background: #222;
+    background: var(--blue1);
     text-align: left;
     padding: 2rem;
     margin: 2rem;
@@ -601,12 +659,12 @@ header .navbar ul li a:hover{
 }
 .contact  .counter .box h3{
     font-size: 1rem;
-    color: #fff;
+    color: var(--swhite);
 }
 
 .contact  .counter .box h4{
     font-size: 1.5rem;
-    color: #fff;
+    color: var(--swhite);
 }
 
 .top{
@@ -661,6 +719,11 @@ header .navbar ul li a:hover{
         left: 15rem;
 
     }
+
+    .about .skills {
+        width: 80%;
+    }
+
     
 
 }
@@ -699,8 +762,11 @@ header .navbar ul li a:hover{
     }
 
     .about .skills {
-        width: 30rem;
+        width: 80%;
     }
+
+    
+
 
     .portfolio .popup img{
 
