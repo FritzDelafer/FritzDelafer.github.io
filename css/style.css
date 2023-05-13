@@ -313,23 +313,33 @@ header .navbar ul li a:hover{
 }
 
 .about  .skills .java{
-    width: 90%;
+    width: 80%;
+    animation: html 3s;
+}
+
+.about  .skills .abap{
+    width: 60%;
+    animation: html 3s;
+}
+
+.about  .skills .sql{
+    width: 70%;
     animation: html 3s;
 }
 
 .about .skills .c{
-    width: 85%;
+    width: 80%;
     animation: html 3s;
 }
 
 
 .about .skills .python{
-    width: 70%;
+    width: 60%;
     animation: html 3s;
 }
 
 .about  .skills .js{
-    width: 70%;
+    width: 60%;
     animation: html 3s;
 }
 
