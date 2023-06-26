@@ -44,7 +44,6 @@ $(document).ready (function(){
         document.querySelector('.popup').style.display = 'none';
     }
 
-
 });
 
 

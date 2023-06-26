@@ -548,8 +548,9 @@ header .navbar ul li a:hover{
     position: absolute;
     left: 30%;
     top: 5rem;
-    width: 500px;
-    object-fit: cover;
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
 }
 
 
@@ -691,7 +692,7 @@ header .navbar ul li a:hover{
 
 /*media queries*/
 
-@media (max-width: 1200px){
+@media (max-width: 1440px){
     html {
         font-size: 55%;
     }
@@ -699,8 +700,12 @@ header .navbar ul li a:hover{
     .home {
         padding: 1rem, 4rem;
     }
+
+    .portfolio .popup img{
+        left: 20rem;
+    }
 }
-@media (max-width: 991px){
+@media (max-width: 1024px){
 
     header {
         left: -120%;
@@ -725,17 +730,11 @@ header .navbar ul li a:hover{
         width: 50%;
     }
     .portfolio .popup img{
-
         left: 15rem;
-
     }
-
     .about .skills {
         width: 80%;
     }
-
-    
-
 }
 
 @media (max-width: 400px){
@@ -774,9 +773,6 @@ header .navbar ul li a:hover{
     .about .skills {
         width: 80%;
     }
-
-    
-
 
     .portfolio .popup img{
 
